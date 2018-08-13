@@ -19,7 +19,7 @@
                                 name="header__search"
                                 placeholder="Search" />
             <div class="header__auth_buttons">
-                <a href="pages/login.html" class="btn bg-slate header__button">Logout</a>
+                <a href="login.html" class="btn bg-slate header__button">Logout</a>
             </div>
         </header>
 
@@ -27,11 +27,8 @@
         <div class="content">
             <div class="content__top_bar">
                 <div class="content__top_bar--right">
-                <ul class="content__nav">
-                    <li class="content__list"><a href="profile.html">Profile</a></li>
-                    <li class="content__list"><a href="questions.html">Questions</a></li>
-                </ul>
-                <a href="ask_question.html" class="btn bg-violet content__question_button">Ask Question</a>
+                <a href="questions.html" class="btn bg-violet content__question_button">View Platform Questions</a>
+                <a href="profile.html" class="btn bg-green content__question_button">My Profile</a>
                 </div>
             </div>
             <div class="content__login content__login--center col-6">
@@ -57,10 +54,12 @@
                         </div>
 
                         <div class="content__login-submit">
-                            <button type="submit" class="content__submit_button btn bg-violet">
+                        <a href="profile.html"
+                            <button type="submit"    class="content__submit_button btn bg-blue">
                                 Post Question
                                 <i class="fa fa-arrow-right"></i>
                             </button>
+                            </a>
                         </div>
                     </form>
                 </div>
