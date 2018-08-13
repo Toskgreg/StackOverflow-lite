@@ -19,7 +19,7 @@
                                 name="header__search"
                                 placeholder="Search" />
             <div class="header__auth_buttons">
-                <a href="../pages/login.html" class="btn bg-slate header__button">Logout</a>
+                <a href="login.html" class="btn bg-slate header__button">Logout</a>
             </div>
         </header>
 
@@ -27,60 +27,105 @@
         <div class="content">
             <div class="content__top_bar">
                 <div class="content__top_bar--right">
-                <ul class="content__nav">
-                    <li class="content__list"><a href="profile.html">Profile</a></li>
-                    <li class="content__list active"><a href="questions.html">Questions</a></li>
-                </ul>
-                <a href="ask_question.html" class="btn bg-violet content__question_button">Ask Question</a>
+                <a href="ask_question.html" class="btn bg-blue content__question_button">Ask Question</a>
+                <a href="questions.html" class="btn bg-violet content__question_button">View Platform Questions</a>
+                <a href="profile.html" class="btn bg-green content__question_button">My Profile</a
                 </div>
             </div>
             <div class="content__questions card">
-                <h2 class="text-violet">What is an Asynchronous Request?</h2>
+                <h2 class="text-violet">What is an API?</h2>
                 <p class="text-slate">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 
-                    1500s, when an unknown printer took a galley of type and scrambled it 
-                    to make a type specimen book. It has survived not only five centuries,
-                     but also the leap into electronic typesetting, remaining essentially 
-                     unchanged. It was popularised in the 1960s with the release of Letras
-                     et sheets containing Lorem Ipsum passages, and more recently with desktop
-                      publishing software like Aldus PageMaker including versions of
-                       Lorem Ipsum.</p>
+                    I've searched for the definition of an API in a programming language and I am still finding it hard to understand.
+
+                    Could anyone advice me in simple, layman's terms:
+
+                    What is an API?
+                    How is it used?
+                    When and where is it used</p>
                 <div>
                     <div class="content__badge m-0">
                         <i class="fa fa-pencil-square-o  text-success"></i>
-                        <span class="text-success">answers (3)</span>
+                        <span class="text-success">answers (2)</span>
                     </div>
                     <div class="content__badge">
                         <i class="fa fa-thumbs-up text-info"></i>
                         <span class="text-info">votes (2)</span>
                     </div>
+                    
                 </div>
                 <div class="comments ml-10 text-slate">
                     <ul class="comment__questions_ul">
-                        <span class="text-bold">Comments</span>
-
-                        <li>
-                            <p class="comment__paragraph pb-5">Nice question man.</p>
-                        </li>
-                        <li>
-                            <p class="comment__paragraph pb-5">Anyone with an answer?</p>
-                        </li>
-
-                        <span class="text-bold mt-15"><small>Add a comment</small></span>
-
-                        <form class="comment__form mt-10">
+                     <span class="text-bold mt-15"><small>Add an Answer</small></span>
+                         <form class="comment__form mt-10">
                             <div class="input-group content__input-group--padding-right">
                                 <textarea class="input comment__textarea">
                                 </textarea>
+                                <button class="btn bg-grey"><i class="fa fa-times">Post Answer</i></button>
                             </div>
                         </form>
                     </ul>
                     
                 </div>
-                <h3 class="text-slate mt-30 pb-15">Answers (1)</h3>
+                <h3 class="text-slate mt-30 pb-15">Answer (1)</h3>
+                <button class="btn bg-green"><i class="fa fa-times">1</i></button>
                 <!-- answers -->
                 <div class="answers">
+                    <div class="left">
+                        <div class="answer__item_vote pull-left">
+                            <div class="arrow-up"></div>
+                            <div class="text-center text-bold p-5"> 1 </div>
+                            <div class="arrow-down"></div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <ul class="content__questions_ul">
+                            <li>
+                                <div class="content__questions_li_question">
+                                    <p class="text-slate">
+                                    Well, In addition to all the answers, I am just adding an example.
+                                    As Others Said API stands for Application Programming Interface
+                                    through which softwares can interact with each other. Note not a human interaction.
+                                    <br><strong>Where it is used</strong></br>
+                                    <br>An example, You are buying an item in online through your credit card.</br> 
+                                    <br>You will provide credit card details and press continue button.</br> 
+                                    <br>It will tell you whether your information is correct or not. </br>
+                                    <br>To provide these results, there are lot of things in the background.</br>
+                                    <br>The application will send your credit card details to a remote application which will</br>
+                                    <br>validate your information and send the result back your application. API is used in this scenario.</br>
+                                    <br>I think hope it helps for the beginners who doesn't understand really what API is.</br>
+
+                                    </p>
+                                    <button class="btn bg-green"><i class="fa fa-times">UP-VOTE</i></button>
+                                    <button class="btn bg-danger"><i class="fa fa-times">DOWN-VOTE</i></button>
+                                    <div class="comments ml-10 text-slate">
+                                        <ul class="comment__questions_ul">
+                                            <span class="text-bold"></span>
+                    
+                                            <span class="text-bold mt-15"><small>Add a comment</small></span>
+                    
+                                            <form class="comment__form mt-10">
+                                                <div class="input-group content__input-group--padding-right">
+                                                    <textarea class="input comment__textarea">
+                                                    
+                                                    </textarea>
+                                                    <button class="btn bg-grey"><i class="fa fa-times">Post Comment</i></button>
+                                                </div>
+                                                <div></div>
+                                            </form>
+                                        </ul>
+                                        
+                                    </div>
+
+                                </div>
+                                
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <h3 class="text-slate mt-30 pb-15">Answer (2)</h3>
+                <button class="btn bg-danger"><i class="fa fa-times">1</i></button>
+                <!-- answers -->
+                                <div class="answers">
                     <div class="left">
                         <div class="answer__item_vote pull-left">
                             <div class="arrow-up"></div>
@@ -93,59 +138,37 @@
                             <li>
                                 <div class="content__questions_li_question">
                                     <p class="text-slate">
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                                        Lorem Ipsum has been the industry's standard dummy text ever since the 
-                                        1500s, when an unknown printer took a galley of type and scrambled it 
-                                        to make a type specimen book. It has survived not only five centuries,
-                                            but also the leap into electronic typesetting, remaining essentially 
-                                            unchanged. It was popularised in the 1960s with the release of Letras
-                                            et sheets containing Lorem Ipsum passages, and more recently with desktop
-                                            publishing software like Aldus PageMaker including versions of
-                                            Lorem Ipsum.
+                                       An application programming interface (API) is a particular set of rules ('code') and specifications that software programs can follow to communicate with each other.
+                                       It serves as an interface between different software programs and facilitates their interaction,
+                                       similar to the way the user interface facilitates interaction between humans and computers
                                     </p>
+                                    <button class="btn bg-green"><i class="fa fa-times">UP-VOTE</i></button>
+                                    <button class="btn bg-danger"><i class="fa fa-times">DOWN-VOTE</i></button>
                                     <div class="comments ml-10 text-slate">
                                         <ul class="comment__questions_ul">
-                                            <span class="text-bold">Comments</span>
-                    
-                                            <li>
-                                                <p class="comment__paragraph pb-5">Nice question man.</p>
-                                            </li>
-                                            <li>
-                                                <p class="comment__paragraph pb-5">Anyone with an answer?</p>
-                                            </li>
+                                            <span class="text-bold"></span>
                     
                                             <span class="text-bold mt-15"><small>Add a comment</small></span>
                     
                                             <form class="comment__form mt-10">
                                                 <div class="input-group content__input-group--padding-right">
                                                     <textarea class="input comment__textarea">
+                                                    
                                                     </textarea>
+                                                    <button class="btn bg-grey"><i class="fa fa-times">Post Comment</i></button>
                                                 </div>
+                                                <div></div>
                                             </form>
                                         </ul>
                                         
                                     </div>
 
                                 </div>
+                                
                             </li>
                         </ul>
                     </div>
                 </div>
-                <!-- answers -->
-
-                <form class="answer__form ml-10">
-                    <h4>Answer</h4>
-                    <div class="input-group content__input-group--padding-right">
-                        <textarea class="input comment__textarea">
-                        </textarea>
-                    </div>
-                    <div class="content__login-submit">
-                        <button type="submit" class="content__submit_button btn bg-violet">
-                            Post Answer
-                            <i class="fa fa-arrow-right"></i>
-                        </button>
-                    </div>
-                </form>
             </div>
         </div>
 
