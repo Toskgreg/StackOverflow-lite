@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Stackoverflow Lite</title>
+        
+        <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+    </head>
+    <body>
+        <!-- header -->
+        <header class="header">
+            <img src="../static/images/logo.png" class="header__logo"/>
+            <a href="javascript:;" class="header__brand_name">StackOverflow-Lite</a>
+            <input class="input header__search-input" 
+                                type="text"    
+                                id="header__search" 
+                                name="header__search"
+                                placeholder="Search" />
+            <div class="header__auth_buttons">
+                <a href="login.html" class="btn bg-slate header__button">Logout</a>
+            </div>
+        </header>
+
+        <!-- content -->
+        <div class="content">
+            <div class="content__top_bar">
+                <div class="content__top_bar--right">
+                <a href="ask_question.html" class="btn bg-blue content__question_button">Ask Question</a>
+                <a href="questions.html" class="btn bg-violet content__question_button">View Platform Questions</a>
+                <a href="profile.html" class="btn bg-green content__question_button">My Profile</a
+                </div>
+            </div>
+            <div class="content__questions card">
+                <h2 class="text-violet">What is Python?</h2>
+                <p class="text-slate">
+                Okay, so I am fairly new at programming (knowing only HTML, CSS, and JavaScript)
+                and I just started diving into Python.
+                What I want to know is, what is it used for and what is it designed for?
+                </p>
+                <div>
+                    <div class="content__badge m-0">
+                        <i class="fa fa-pencil-square-o  text-success"></i>
+                        <span class="text-success">answers (2)</span>
+                    </div>
+                    <div class="content__badge">
+                        <i class="fa fa-thumbs-up text-info"></i>
+                        <span class="text-info">votes (0)</span>
+                    </div>
+                    
+                </div>
+                <div class="comments ml-10 text-slate">
+                    <ul class="comment__questions_ul">
+                     <span class="text-bold mt-15"><small>Add an Answer</small></span>
+                         <form class="comment__form mt-10">
+                            <div class="input-group content__input-group--padding-right">
+                                <textarea class="input comment__textarea">
+                                </textarea>
+                                <button class="btn bg-grey"><i class="fa fa-times">Post Answer</i></button>
+                            </div>
+                        </form>
+                    </ul>
+                    
+                </div>
+                <h3 class="text-slate mt-30 pb-15">Answer (1)</h3>
+                <button class="btn bg-grey"><i class="fa fa-times">0</i></button>
+                <!-- answers -->
+                <div class="answers">
+                    <div class="left">
+                        <div class="answer__item_vote pull-left">
+                            <div class="arrow-up"></div>
+                            <div class="text-center text-bold p-5"> 1 </div>
+                            <div class="arrow-down"></div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <ul class="content__questions_ul">
+                            <li>
+                                <div class="content__questions_li_question">
+                                    <p class="text-slate">
+                                    Python is a dynamic, strongly typed, object oriented, multipurpose programming language, 
+                                    designed to be quick (to learn, to use, and to understand), and to enforce a clean and uniform syntax
+                                    <br><strong>Where it is used</strong></br>
+                                    <br>Python is dynamically typed: it means that you don't declare a type (e.g. 'integer') for a variable </br> 
+                                    <br>name, and then assign something of that type (and only that type). Instead, you have variable </br> 
+                                    <br>names, and you bind them to entities whose type stays with the entity itself. a = 5 makes the </br>
+                                    <br>variable name a to refer to the integer 5. Later, a = "hello" makes the variable name a to </br>
+                                    <br>refer to a string containing "hello". Static typed languages would have you declare int a and </br>
+                                    <br>then a = 5, but assigning a = "hello" would have been a compile time error. On one hand, </br>
+                                    <br>this makes everything more unpredictable (you don't know what a refers to). On the other </br>
+                                    <br>hand, it makes very easy to achieve some results a static typed languages makes very difficult. </br>
+                                    </p>
+                                    <button class="btn bg-green"><i class="fa fa-times">UP-VOTE</i></button>
+                                    <button class="btn bg-danger"><i class="fa fa-times">DOWN-VOTE</i></button>
+                                    <div class="comments ml-10 text-slate">
+                                        <ul class="comment__questions_ul">
+                                            <span class="text-bold"></span>
+                    
+                                            <span class="text-bold mt-15"><small>Add a comment</small></span>
+                    
+                                            <form class="comment__form mt-10">
+                                                <div class="input-group content__input-group--padding-right">
+                                                    <textarea class="input comment__textarea">
+                                                    
+                                                    </textarea>
+                                                    <button class="btn bg-grey"><i class="fa fa-times">Post Comment</i></button>
+                                                </div>
+                                                <div></div>
+                                            </form>
+                                        </ul>
+                                        
+                                    </div>
+
+                                </div>
+                                
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <h3 class="text-slate mt-30 pb-15">Answer (2)</h3>
+                <button class="btn bg-grey"><i class="fa fa-times">0</i></button>
+                <!-- answers -->
+                                <div class="answers">
+                    <div class="left">
+                        <div class="answer__item_vote pull-left">
+                            <div class="arrow-up"></div>
+                            <div class="text-center text-bold p-5"> 2 </div>
+                            <div class="arrow-down"></div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <ul class="content__questions_ul">
+                            <li>
+                                <div class="content__questions_li_question">
+                                    <p class="text-slate">
+                                     Python offers a stepping stone into the world of programming. Even though Python Programming Language has been around for 25 years, 
+                                     it is still rising in popularity. 
+                                     Some of the biggest advantage of Python are it's easy to learn.
+                                    </p>
+                                    <button class="btn bg-green"><i class="fa fa-times">UP-VOTE</i></button>
+                                    <button class="btn bg-danger"><i class="fa fa-times">DOWN-VOTE</i></button>
+                                    <div class="comments ml-10 text-slate">
+                                        <ul class="comment__questions_ul">
+                                            <span class="text-bold"></span>
+                    
+                                            <span class="text-bold mt-15"><small>Add a comment</small></span>
+                    
+                                            <form class="comment__form mt-10">
+                                                <div class="input-group content__input-group--padding-right">
+                                                    <textarea class="input comment__textarea">
+                                                    
+                                                    </textarea>
+                                                    <button class="btn bg-grey"><i class="fa fa-times">Post Comment</i></button>
+                                                </div>
+                                                <div></div>
+                                            </form>
+                                        </ul>
+                                        
+                                    </div>
+
+                                </div>
+                                
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
