@@ -24,3 +24,14 @@ class QUESTIONAPI(MethodView):
                     "msg": " There are no questions at the moment"}
                 return make_response(jsonify(response)), 200
             return jsonify(questions), 200
+
+
+    def post(self):
+        '''Method for a post request'''
+        data = request.json
+        question_title = data["question_title"]
+        question_description = data["question_description"]
+        res = Question.ask_question(question_title, question_description)
+        if res == "Your question has been successfully asked.":
+            return jsonify({'msg': res}), 201
+        return jsonify({'msg': res}), 201

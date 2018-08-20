@@ -39,3 +39,21 @@ class Question(object):
     def view_all_questions(cls):
         """ Return all the questions asked on the forum."""
         return QUESTIONS
+        
+    @classmethod
+    def ask_question(cls, question_title, question_description):
+        """A method for asking a question"""
+        cls.data = {}
+        cls.data = collections.OrderedDict()
+        if cls.question_already_exists(question_title, question_description):
+            return "question already exists"
+        else:
+            cls.data['Id'] = uuid.uuid1()
+            cls.data['date_created'] = dt.utcnow()
+            cls.data['date_modified'] = dt.utcnow()
+            cls.data['question_title'] = question_title
+            cls.data['question_description'] = question_description
+            cls.data['answers'] = ANSWERS
+
+            QUESTIONS.append(cls.data)
+            return "Your question has been successfully asked."
