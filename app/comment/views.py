@@ -7,3 +7,5 @@ COMMENT_APP = Blueprint('COMMENT_APP', __name__)
 COMMENT_VIEW = COMMENTAPI.as_view('comment_api')
 COMMENT_APP.add_url_rule('/api/v1/questions/<question_id>/<answer_id>/comment',
                          view_func=COMMENT_VIEW, methods=['POST', ])
+
+                         
