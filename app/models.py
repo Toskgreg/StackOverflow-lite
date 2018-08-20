@@ -101,4 +101,24 @@ class Answer(object):
                 ANSWERS.append(cls.data1)
                 return "You have successfully answered the question."
 
-                
+class Comment(object):
+    def __init__(self, text1, answer_id, question_id, date_commented):
+        self.text1 = text1
+        self.answer_id = Answer(answer_id)
+        self.question_id = Question(question_id)
+        self.date_commented = dt.utcnow()
+
+    @classmethod
+    def comment_on_answer(cls, question_id, answer_id, text1):
+        """A method for posting a comment to a answer"""
+        for question in QUESTIONS:
+            if question['Id'] == question_id:
+                for answer in ANSWERS:
+                    if answer['Id'] == answer_id:
+                        cls.data2 = {}
+                        cls.data2['Id'] = uuid.uuid1()
+                        cls.data2['text1'] = text1
+                        cls.data2['date_commented'] = dt.utcnow()
+
+                        COMMENTS.append(cls.data2)
+                        return "You have successfully commented on the answer."          
