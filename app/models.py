@@ -40,7 +40,7 @@ class Question(object):
         """ Return all the questions asked on the forum."""
         return QUESTIONS
 
-        
+
     @classmethod
     def ask_question(cls, question_title, question_description):
         """A method for asking a question"""
@@ -58,3 +58,45 @@ class Question(object):
 
             QUESTIONS.append(cls.data)
             return "Your question has been successfully asked."
+
+class Answer(object):
+    def __init__(
+            self,
+            text,
+            answer_id,
+            question_id,
+            accepted,
+            up_vote,
+            downvote,
+            date_answered,
+            comments):
+        self.text = text
+        self.answer_id = answer_id
+        self.question_id = Question(question_id)
+        self.up_vote = 0
+        self.down_vote = 0
+        self.comments = COMMENTS
+        self.accepted = False
+        self.date_answered = dt.utcnow()
+
+    @classmethod
+    def view_all_answers(cls):
+        """ Return all the answers asked on the forum."""
+        return ANSWERS
+
+    @classmethod
+    def answer_question(cls, question_id, text):
+        """A method for posting a answer"""
+        for question in QUESTIONS:
+            if question['Id'] == question_id:
+                cls.data1 = {}
+                cls.data1['Id'] = uuid.uuid1()
+                cls.data1['text'] = text
+                cls.data1['up_vote'] = 0
+                cls.data1['down_vote'] = 0
+                cls.data1['comment'] = COMMENTS
+                cls.data1['accepted'] = False
+                cls.data1['date_answered'] = dt.utcnow()
+
+                ANSWERS.append(cls.data1)
+                return "You have successfully answered the question."
