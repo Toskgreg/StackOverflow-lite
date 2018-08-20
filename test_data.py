@@ -4,7 +4,6 @@ post_question1 = {
 
 }
 
-
 post_answer = {
     "text": "Nairobi",
 }
