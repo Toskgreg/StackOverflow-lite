@@ -1,4 +1,4 @@
-"""This module handles the class RequestApi and its post method"""
+"""This module handles the class COMMENTApi and its post method"""
 import uuid
 from flask.views import MethodView
 from flask import jsonify, request, abort, make_response
@@ -6,7 +6,7 @@ from app.models import *
 
 
 class COMMENTAPI(MethodView):
-    """This class-based view for requesting a ride."""
+    """This class-based view for COMMENTING on a question."""
 
     def post(self, question_id, answer_id):
         '''Method for a post request'''

@@ -1,4 +1,4 @@
-"""This module handle the registering of the REQUES_APP blue_print and
+"""This module handle the registering of the COMMENT_APP blue_print and
  adding the adds the url rule"""
 from flask import Blueprint
 from app.comment.api import COMMENTAPI

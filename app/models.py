@@ -121,4 +121,20 @@ class Comment(object):
                         cls.data2['date_commented'] = dt.utcnow()
 
                         COMMENTS.append(cls.data2)
-                        return "You have successfully commented on the answer."          
+                        return "You have successfully commented on the answer."
+
+class Up_vote(object):
+    def __init__(self, answer_id, question_id):
+        self.answer_id = Answer(answer_id)
+        self.question_id = Question(question_id)
+
+    @classmethod
+    def up_vote_on_answer(cls, question_id, answer_id):
+        """A method for upvoting a answer"""
+        for question in QUESTIONS:
+            if question['Id'] == question_id:
+                for answer in ANSWERS:
+                    if answer['Id'] == answer_id:
+                        answer['up_vote'] = answer['up_vote'] + 1
+                        return "You have successfully upvoted the answer."
+        abort(404)          
