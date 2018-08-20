@@ -4,6 +4,8 @@ import collections
 from datetime import datetime as dt
 from flask import jsonify, request, abort, make_response
 QUESTIONS = []
+ANSWERS = []
+COMMENTS = []
 
 
 
@@ -139,8 +141,8 @@ class Up_vote(object):
                         return "You have successfully upvoted the answer."
         abort(404)         
 
- class Down_vote(object):
-        def __init__(self, answer_id, question_id):
+class Down_vote(object):
+    def __init__(self, answer_id, question_id):
         self.answer_id = Answer(answer_id)
         self.question_id = Question(question_id)
 
