@@ -39,6 +39,7 @@ class Question(object):
     def view_all_questions(cls):
         """ Return all the questions asked on the forum."""
         return QUESTIONS
+
         
     @classmethod
     def ask_question(cls, question_title, question_description):
